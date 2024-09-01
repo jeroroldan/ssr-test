@@ -1,0 +1,89 @@
+<app-header/>
+<main class="productos productos__contenedor">
+  <h2 class="productos__heading">Nuestra Colección</h2>
+
+  <div class="productos__grid">
+    @for(producto of productos; track producto){
+      <app-card-producto
+        [pathSrc]="producto.pathSrc"
+        [productName]="producto.productName"
+        [productDescription]="producto.productDescription"
+        [productPrice]="producto.productPrice"
+        [productLinkTitle]="producto.productLinkTitle"
+      />
+    }
+  </div>
+</main>
+<section class="cursos">
+  <div class="cursos__contenedor cursos__grid">
+    <div class="cursos__contenido">
+      <h2 class="cursos__heading">Aprende a tocar guitarra</h2>
+      <p class="cursos__texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio quidem laudantium,
+        necessitatibus asperiores recusandae reprehenderit voluptatum nostrum mollitia atque quis, id cumque suscipit
+        corrupti impedit unde doloremque, debitis labore sed?</p>
+      <a class="cursos__enlace" href="#">Más información</a>
+    </div>
+  </div>
+</section>
+<section class="blog">
+  <h2 class="blog__heading">Nuestro Blog</h2>
+  <div class="blog__contenedor blog__grid">
+    <article class="entrada">
+      <img src="../assets/img/blog_1.jpg" alt="Imagen Blog">
+      <div class="entrada__contenido">
+        <h3 class="entrada__titulo">Cómo elegir tu primer guitarra?</h3>
+        <p class="entrada__fecha">20 de enero 2024</p>
+        <p class="entrada__texto">Lorem ipsum, dolor sit amet consecteturcon secteturc onsectetur consectetur
+          adipisicing elit. Fuga ratione totam voluptatem, iste eveniet rem dignissimos, facilis earum eos, sed ad
+          expedita? Sequi veritatis sit non exercitationem possimus nihil ratione!</p>
+        <a class="entrada__enlace" href="entrada.html">leer entrada</a>
+      </div>
+    </article>
+    <article class="entrada">
+      <img src="../assets/img/blog_2.jpg" alt="Imagen Blog">
+      <div class="entrada__contenido">
+        <h3 class="entrada__titulo">Cómo elegir tu primer guitarra?</h3>
+        <p class="entrada__fecha">20 de enero 2024</p>
+        <p class="entrada__texto">Lorem ipsum, dolor sit amet consecteturcon secteturc onsectetur consectetur
+          adipisicing elit. Fuga ratione totam voluptatem, iste eveniet rem dignissimos, facilis earum eos, sed ad
+          expedita? Sequi veritatis sit non exercitationem possimus nihil ratione!</p>
+        <a class="entrada__enlace" href="entrada.html">leer entrada</a>
+      </div>
+    </article>
+    <article class="entrada">
+      <img src="../assets/img/blog_3.jpg" alt="Imagen Blog">
+      <div class="entrada__contenido">
+        <h3 class="entrada__titulo">Cómo elegir tu primer guitarra?</h3>
+        <p class="entrada__fecha">20 de enero 2024</p>
+        <p class="entrada__texto">Lorem ipsum, dolor sit amet consecteturcon secteturc onsectetur consectetur
+          adipisicing elit. Fuga ratione totam voluptatem, iste eveniet rem dignissimos, facilis earum eos, sed ad
+          expedita? Sequi veritatis sit non exercitationem possimus nihil ratione!</p>
+        <a class="entrada__enlace" href="entrada.html">leer entrada</a>
+      </div>
+    </article>
+    <article class="entrada">
+      <img src="../assets/img/blog_4.jpg" alt="Imagen Blog">
+      <div class="entrada__contenido">
+        <h3 class="entrada__titulo">Cómo elegir tu primer guitarra?</h3>
+        <p class="entrada__fecha">20 de enero 2024</p>
+        <p class="entrada__texto">Lorem ipsum, dolor sit amet consecteturcon secteturc onsectetur consectetur
+          adipisicing elit. Fuga ratione totam voluptatem, iste eveniet rem dignissimos, facilis earum eos, sed ad
+          expedita? Sequi veritatis sit non exercitationem possimus nihil ratione!</p>
+        <a class="entrada__enlace" href="entrada.html">leer entrada</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__contenedor footer__contenido">
+    <nav class="footer__nav">
+      <a class="footer__enlace">Inicio</a>
+      <a class="footer__enlace">Nosotros</a>
+      <a class="footer__enlace">Blog</a>
+      <a class="footer__enlace">Tienda</a>
+    </nav>
+    <p class="footer__copyright">Todos los derechos reservados.</p>
+  </div>
+</footer>
+
