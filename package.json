@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm start build",
+    "build": "ng build my-ssr-app",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:my-ssr-app": "node dist/my-ssr-app/server/server.mjs"
